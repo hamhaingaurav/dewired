@@ -1,0 +1,38 @@
+- name: Home
+  link: /
+  social: false
+  targetBlank: false
+
+- name: About Me
+  link: https://hamhaingaurav.github.io/
+  targetBlank: true
+  social: false
+
+- name: Request a topic
+  link: /request
+  targetBlank: false
+  social: false
+
+- name: Github
+  link: https://github.com/hamhaingaurav
+  targetBlank: true
+  social: true
+  icon: <i class="bi bi-github"></i>
+
+- name: LinkedIn
+  link: https://www.linkedin.com/in/hamhaingaurav
+  targetBlank: true
+  social: true
+  icon: <i class="bi bi-linkedin"></i>
+
+- name: YouTube
+  link: https://www.youtube.com/channel/UCr8iAGGDg9gFosQWQpcKfRA
+  targetBlank: true
+  social: true
+  icon: <i class="bi bi-youtube"></i>
+
+- name: Instagram
+  link: https://www.instagram.com/devjunction.in
+  targetBlank: true
+  social: true
+  icon: <i class="bi bi-instagram"></i>

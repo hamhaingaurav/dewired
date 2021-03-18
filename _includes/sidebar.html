@@ -1,0 +1,46 @@
+<nav id="sidebar">
+  <div class="custom-menu">
+    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+      <i class="bi bi-list"></i>
+      <span class="sr-only">Menu</span>
+    </button>
+  </div>
+  <div class="p-4 sidebar-main-content">
+    <h1><a href="/" class="logo">Dewired <span>by Gaurav Sharma</span></a></h1>
+    <ul class="list-unstyled components mb-5">
+
+      {% for item in site.data.navigation %}
+        {% if item.social == false %}
+        <li {% if page.url == item.link %}class="active"{% endif %}>
+          <a href="{{ item.link }}" {% if item.targetBlank %}target="{{ item.targetBlank }}"{% endif %}>{{ item.name }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="d-flex justify-content-between px-2 mb-5 text-center align-item-center">
+      {% for item in site.data.navigation %}
+        {% if item.social == true %}
+          <a class="border text-dark social-icon bg-light" href="{{ item.link }}" {% if item.targetBlank %}target="{{ item.targetBlank }}"{% endif %}>{{ item.icon }}</a>
+          {% endif %}
+        {% endfor %}
+    </div>
+
+    <!-- <div class="mb-5">
+      <h3 class="h6 mb-3">Subscribe for newsletter</h3>
+      <form action="#" class="subscribe-form">
+        <div class="form-group d-flex">
+          <div class="icon"><span class="icon-paper-plane"></span></div>
+          <input type="text" class="form-control" placeholder="Enter Email Address">
+        </div>
+      </form>
+    </div> -->
+
+    <div class="footer">
+      <p>
+        &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved
+      </p>
+    </div>
+
+  </div>
+</nav>

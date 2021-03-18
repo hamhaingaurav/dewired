@@ -1,0 +1,37 @@
+<div class="search-form">
+  <form>
+    <div class="input-group input-group-lg border shadow bg-body mt-4">
+      <input
+        class="form-control form-control-lg p-3 rounded-0"
+        name="search_term"
+        id="id_search_term"
+        type="text"
+        placeholder="Search..."
+      />
+      <span class="input-group-text rounded-0">
+        <i class="bi bi-search"></i>
+      </span>
+    </div>
+    <ul id="results-container" class="list-group list-group-flush"></ul>
+  </form>
+</div>
+
+<!-- Script pointing to search-script.js -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.9.1/simple-jekyll-search.min.js"
+  integrity="sha512-gABzh+zgo1Eh5HMdD2IMOjeaQAjl9v/MrA3xbZnMTRR5wC4x3WxurJo6yg5EWj1zfNz0qoXK/rKVP5Are0E4QQ=="
+  crossorigin="anonymous"
+></script>
+
+<!-- Configuration -->
+<script>
+  SimpleJekyllSearch({
+    searchInput: document.getElementById("id_search_term"),
+    resultsContainer: document.getElementById("results-container"),
+    noResultsText: `<p class="mt-2 mb-0 text-center text-danger">Sorry, No results!</p>`,
+    limit: 10,
+    fuzzy: true, //Enable fuzzy search to allow less restrictive matching.
+    searchResultTemplate: `<li class="list-group-item"><a href="{url}"><p class="m-0">{title}</p></a><small>{metadata}</small></li>`,
+    json: "/search.json",
+  });
+</script>
