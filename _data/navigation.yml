@@ -8,11 +8,6 @@
   targetBlank: true
   social: false
 
-- name: Request a topic
-  link: /request
-  targetBlank: false
-  social: false
-
 - name: Github
   link: https://github.com/hamhaingaurav
   targetBlank: true
