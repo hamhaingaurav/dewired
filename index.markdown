@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Dewired - A Blog by Gaurav Sharma
+title: Blog - A Blog by Gaurav Sharma
 ---
 
 

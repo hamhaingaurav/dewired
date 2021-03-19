@@ -32,6 +32,6 @@
     limit: 10,
     fuzzy: true, //Enable fuzzy search to allow less restrictive matching.
     searchResultTemplate: `<li class="list-group-item"><a href="{url}"><p class="m-0">{title}</p></a><small>{metadata}</small></li>`,
-    json: "/search.json",
+    json: "{{ '/search.json' | absolute_url }}",
   });
 </script>
