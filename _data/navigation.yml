@@ -4,18 +4,18 @@
   targetBlank: false
 
 - name: About Me
-  link: https://hamhaingaurav.github.io/
+  link: https://mnamegaurav.github.io/
   targetBlank: true
   social: false
 
 - name: Github
-  link: https://github.com/hamhaingaurav
+  link: https://github.com/mnamegaurav
   targetBlank: true
   social: true
   icon: <i class="bi bi-github"></i>
 
 - name: LinkedIn
-  link: https://www.linkedin.com/in/hamhaingaurav
+  link: https://www.linkedin.com/in/mnamegaurav
   targetBlank: true
   social: true
   icon: <i class="bi bi-linkedin"></i>
